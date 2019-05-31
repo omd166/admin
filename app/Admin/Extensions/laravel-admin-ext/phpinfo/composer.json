@@ -1,0 +1,39 @@
+{
+    "name": "laravel-admin-ext/phpinfo",
+    "description": "Laravel Infp",
+    "type": "library",
+    "keywords": ["laravel-admin", "phpInfo"],
+    "homepage": "https://github.com/laravel-admin-ext/phpinfo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "omid",
+            "email": "omd166@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "app/Admin/extensions/laravel-admin-ext/phpinfo"
+        }
+    ]
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\PHPInfo\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\PHPInfo\\PHPInfoServiceProvider"
+            ]
+        }
+    }
+}
